@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* This is Styling for cross- bar */
+.options-cont {
+    height: 4rem;
+    width: 3.5rem;
+    background-color: #f1f2f6;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* This is done for styling tools container */
+.tools-cont {
+    display: flex;
+    height: 5rem;
+    width: 55vw;
+    background-color: #f1f2f6;
+    justify-content: space-around;
+    position: absolute;
+    top: 2rem;
+    left: 25vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* This is done for animation */
+.scale-tools {
+    animation-name: scale-tools;
+    animation-duration: 1s;
+}
+@keyframes scale-tools {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* This styling is done for element inside the tool container */
+.tools-cont > * {
+    display: block;
+    width: 4rem;
+}
+
+/* This styling is done for pencil tool container */
+.pencil-tool-cont {
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 5rem;
+    width: 7rem;
+    position: absolute;
+    top: 7rem;
+    left: 25vw;
+    border-radius: 3px;
+    display: none;
+}
+
+/* This styling is done for pencil width container */
+.pencil-width-cont {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-width-cont input {
+    width: 80%;
+}
+
+/* This styling is done for pencil color container */
+.pencil-color-cont {
+    height: calc( 100% - 2rem );  /* This is done for space consumed of height pencil color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pencil-color {
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.black {
+    background-color: black;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+
+/* This Styling is done for eraser tool container */
+.eraser-tool-cont {
+    height: 2rem;
+    width: 7rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7rem;
+    left: 33vw;
+}
+.eraser-tool-cont input {
+    width: 80%;
+}
+
+/* This styling is done for sticky container */
+.sticky-cont {
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+}
+
+/* This styling is done for sticky header part and its contain two part */
+.header-cont {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f1f2f6;
+}
+
+/* This styling is done for inside sticky 1st part that is sticky header part element(which contains minimize and remove button */
+.header-cont > * {
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+.minimize {
+    background-color: #2ed573;
+}
+.remove {
+    background-color: #ff4757;
+}
+
+/* This styling is done for 2nd part of sticky note i.e. note part */
+.note-cont {
+    height: calc( 100% - 2rem );  /*  it will determine the height of note container */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
